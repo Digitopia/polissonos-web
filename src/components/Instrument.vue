@@ -383,7 +383,7 @@ export default {
     this.cy = this.h / 2
 
     this.emitter.on('changeScene', (sceneIdx) => {
-      if (this.isInstrumentSelected) this.setSelectedScene(sceneIdx)
+      if (this.isInstrumentSelected) this.selectedSceneIdx = sceneIdx
     })
 
     this.emitter.on('togglePlay', () => {
